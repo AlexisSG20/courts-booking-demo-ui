@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-import ValidateHero from "../components/validate/ValidateHero";
-import TokenValidationCard from "../components/validate/TokenValidationCard";
-import ScannerCard from "../components/validate/ScannerCard";
-import BookingResultCard from "../components/validate/BookingResultCard";
-import ValidateEmptyState from "../components/validate/ValidateEmptyState";
+import ValidateHero from "../components/Validate/ValidateHero";
+import TokenValidationCard from "../components/Validate/TokenValidationCard";
+import ScannerCard from "../components/Validate/ScannerCard";
+import BookingResultCard from "../components/Validate/BookingResultCard";
+import ValidateEmptyState from "../components/Validate/ValidateEmptyState";
 
 const sidePanelBase =
   "pointer-events-none absolute inset-y-0 z-0 hidden overflow-hidden xl:block";
