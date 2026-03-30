@@ -1,16 +1,56 @@
-# React + Vite
+# Courts Booking Demo UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Demo visual frontend de un sistema de reservas de canchas deportivas, creada para portfolio y despliegue rápido en Netlify.
 
-Currently, two official plugins are available:
+## Demo online
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+[Ver demo publicada](https://courts-booking-demo-ui.netlify.app)
 
-## React Compiler
+## Objetivo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Esta aplicación muestra de forma navegable el flujo principal de un sistema de reservas deportivas:
 
-## Expanding the ESLint configuration
+- reserva de cancha
+- generación de token y QR
+- validación por token
+- panel administrativo
+- demo de consultas tipo IA
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Esta versión es **solo visual/frontend**, separada del proyecto real fullstack.
+
+## Tecnologías usadas
+
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- Netlify
+
+## Rutas disponibles
+
+- `/`
+- `/login`
+- `/validate`
+- `/admin/bookings`
+- `/ai-demo`
+
+## Nota importante
+
+Este repositorio contiene una **demo visual** pensada para mostrar navegación, diseño e interfaz.
+
+No usa backend real ni base de datos en producción.  
+El proyecto completo fullstack fue trabajado por separado en otro repositorio.
+
+## Ejecución local
+
+```bash
+npm install
+npm run dev
+```
+
+## Build de producción
+
+```bash
+npm run build
+npm run preview
+```
