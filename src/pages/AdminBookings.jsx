@@ -1,11 +1,11 @@
 import { useEffect, useMemo, useState } from "react";
 import { exportBookingsToExcel } from "../lib/exportExcel";
 
-import AdminHero from "../components/admin/AdminHero";
-import AdminFiltersCard from "../components/admin/AdminFiltersCard";
-import AdminStatsGrid from "../components/admin/AdminStatsGrid";
-import AdminCourtBreakdown from "../components/admin/AdminCourtBreakdown";
-import AdminBookingsTable from "../components/admin/AdminBookingsTable";
+import AdminHero from "../components/Admin/AdminHero";
+import AdminFiltersCard from "../components/Admin/AdminFiltersCard";
+import AdminStatsGrid from "../components/Admin/AdminStatsGrid";
+import AdminCourtBreakdown from "../components/Admin/AdminCourtBreakdown";
+import AdminBookingsTable from "../components/Admin/AdminBookingsTable";
 
 const sidePanelBase =
   "pointer-events-none absolute inset-y-0 z-0 hidden overflow-hidden xl:block";
