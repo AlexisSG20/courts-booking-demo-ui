@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color: #111827;
+  background: #0f172a;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  min-width: 320px;
+  background: #0f172a;
+  background-image: 
+    linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.85)),
+    url('https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=2070&auto=format&fit=crop');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  color: #111827;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+input[type="date"],
+input[type="month"] {
+  min-width: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type="date"]::-webkit-datetime-edit,
+input[type="month"]::-webkit-datetime-edit {
+  padding-right: 0.5rem;
+  color: #111827;
+  min-width: max-content;
+}
+
+input[type="date"]::-webkit-datetime-edit-fields-wrapper,
+input[type="month"]::-webkit-datetime-edit-fields-wrapper {
+  padding: 0;
+}
+
+input[type="date"]::-webkit-datetime-edit-text,
+input[type="month"]::-webkit-datetime-edit-text {
+  color: rgba(17, 24, 39, 0.7);
+  padding: 0 0.15rem;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="month"]::-webkit-calendar-picker-indicator {
+  opacity: 0.9;
+  cursor: pointer;
+  margin-left: 0.35rem;
+}
+
+input[type="date"]::-webkit-datetime-edit-year-field,
+input[type="date"]::-webkit-datetime-edit-month-field,
+input[type="date"]::-webkit-datetime-edit-day-field,
+input[type="month"]::-webkit-datetime-edit-month-field,
+input[type="month"]::-webkit-datetime-edit-year-field {
+  padding: 0 0.1rem;
+}
+
+/* Quitar el highlight azul de selección en inputs de fecha */
+input[type="date"],
+input[type="month"] {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type="date"]:focus,
+input[type="month"]:focus {
+  -webkit-tap-highlight-color: transparent;
+}
+
+input[type="date"]::selection,
+input[type="month"]::selection,
+input[type="date"]::-webkit-datetime-edit::selection,
+input[type="month"]::-webkit-datetime-edit::selection,
+input[type="date"]::-webkit-datetime-edit-fields-wrapper::selection,
+input[type="month"]::-webkit-datetime-edit-fields-wrapper::selection,
+input[type="date"]::-webkit-datetime-edit-year-field::selection,
+input[type="date"]::-webkit-datetime-edit-month-field::selection,
+input[type="date"]::-webkit-datetime-edit-day-field::selection,
+input[type="month"]::-webkit-datetime-edit-month-field::selection,
+input[type="month"]::-webkit-datetime-edit-year-field::selection {
+  background: transparent;
+  color: inherit;
+}
+
+/* Estilos específicos para Brave/Chrome - quitar highlight de campos individuales */
+input[type="date"]::-webkit-datetime-edit-year-field:focus,
+input[type="date"]::-webkit-datetime-edit-month-field:focus,
+input[type="date"]::-webkit-datetime-edit-day-field:focus,
+input[type="month"]::-webkit-datetime-edit-month-field:focus,
+input[type="month"]::-webkit-datetime-edit-year-field:focus {
+  background: transparent;
+  outline: none;
+}
+
+/* Estilos para las opciones del select (dropdown) */
+select {
+  color-scheme: light;
+}
+
+select option {
+  background-color: #ffffff;
+  color: #111827;
+  padding: 0.5rem;
+}
+
+select option:hover,
+select option:focus,
+select option:checked {
+  background-color: #F3F4F6;
+  color: #111827;
+}
